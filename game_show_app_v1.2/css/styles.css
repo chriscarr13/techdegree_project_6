@@ -166,7 +166,7 @@ button {
 /* Used https://www.w3schools.com/howto/howto_css_shake_image.asp for reference */
 .wiggle-effect {
   animation: wiggle 0.4s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-in;
 }
 
 @keyframes wiggle {
@@ -175,4 +175,16 @@ button {
   50% {transform: rotate(15deg);}
   75% {transform: rotate(-5deg);}
   100% {transform: rotate(0deg);}
+}
+.flash-effect {
+  animation: flash 0.8s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes flash {
+  0% {opacity: 100%;}
+  25% {opacity: 0;}
+  50% {opacity: 100%;}
+  75% {opacity: 0;}
+  100% {opacity: 100%}
 }

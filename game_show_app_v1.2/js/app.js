@@ -95,6 +95,7 @@ function checkLetter (btn) {
         if (checkLetter[i].classList.contains('letter')) {
             if(btnClicked === checkLetter[i].textContent.toLowerCase()) {
                 checkLetter[i].classList.add('show');
+                checkLetter[i].style.transition = 'all .6s ease-in';
                 match = btnClicked;
             }
         }
